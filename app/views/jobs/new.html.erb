@@ -1,0 +1,13 @@
+<%= form_for Job.new do |j| %>
+  <%= j.label :title %>
+  <%= j.text_field :title %>
+  <%= j.label :company %>
+  <%= j.text_field :company %>
+  <%= j.label :location %>
+  <%= j.text_field :location %>
+  <%= j.label :description %>
+  <%= j.text_field :description %>
+  <%= j.label :salary %>
+  <%= j.text_field :salary %>
+  <%= j.submit %>
+<% end %>
