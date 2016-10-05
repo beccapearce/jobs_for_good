@@ -1,10 +1,11 @@
-# A Website to help those looking for jobs in companies that pride themselves on social impact
+# Description
+ A website to help those looking for jobs in companies that pride themselves on social impact
 
 While searching for jobs myself I decided to make the page I really wanted to exist
 
 ### Instructions
 
-until it is deployed and everyone is using it, run locally
+Until it is deployed and everyone is using it, run locally
 
 clone the code
 
