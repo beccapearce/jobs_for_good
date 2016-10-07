@@ -1,16 +1,19 @@
 <% if @jobs.any? %>
   <% @jobs.each do |job| %>
-    <h3> <%= job.title %> </h3>
+    <h3> <%= link_to job.title, job_path(job) %> </h3>
     <%= job.company %>
     <%= job.location %>
     <%= job.salary %>
     <%= job.description %>
-    <%= link_to job.title, job_path(job) %>
-    <%= link_to "Edit", edit_job_path(job) %>
-    <%= link_to "Delete", job_path(job), method: :delete %>
+    <div class=job_commands>
+      <%= link_to "Edit", edit_job_path(job) %>
+      <%= link_to "Delete", job_path(job), method: :delete %>
+    </div>
   <% end %>
 <% else %>
   No jobs yet
 <% end %>
+
+<br>
 
 <a href='/jobs/new'>Add a job</a>

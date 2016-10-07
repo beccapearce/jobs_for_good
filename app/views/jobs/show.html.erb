@@ -1,7 +1,16 @@
-<%= @job.title %>
+<div id=job_details>
+<h2><%= @job.title %></h2>
+
 <%= @job.company %>
+
 <%= @job.location %>
-<%= @job.description %>
+
 <%= @job.salary %>
 
+  <div>
+    <br>
+    <%= @job.description %>
+  </div>
+</div>
+<br>
 <a href='/jobs'>Back to the jobs board</a>
