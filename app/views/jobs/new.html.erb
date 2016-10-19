@@ -1,3 +1,4 @@
+<div class="form">
 <%= form_for Job.new do |j| %>
   <%= j.label :title %>
   <%= j.text_field :title %>
@@ -10,4 +11,5 @@
   <%= j.label :salary %>
   <%= j.text_field :salary %>
   <%= j.submit %>
+  <div>
 <% end %>

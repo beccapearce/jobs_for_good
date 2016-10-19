@@ -1,3 +1,38 @@
 // Place all the styles related to the jobs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//colors
+$color_lima_approx: #73ad21;
+
+#container {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 25px;
+	border: 2px solid $color_lima_approx;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+  margin-bottom: 10px;
+}
+
+.ellipsis {
+  align-self: flex-end;
+}
+
+.jobs {
+  display: flex;
+  width: 100%;
+	flex-direction: column;
+	margin: 0px auto;
+	justify-content: center;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.job_commands{
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,15 +1,22 @@
 <% if @jobs.any? %>
-  <% @jobs.each do |job| %>
-    <h3> <%= link_to job.title, job_path(job) %> </h3>
-    <%= job.company %>
-    <%= job.location %>
-    <%= job.salary %>
-    <%= job.description %>
-    <div class=job_commands>
-      <%= link_to "Edit", edit_job_path(job) %>
-      <%= link_to "Delete", job_path(job), method: :delete %>
+  <div class="jobs">
+    <% @jobs.each do |job| %>
+      <div id="container">
+        <div class="ellipsis">...</div>
+        <div class=job_commands>
+          <%= link_to "Edit", edit_job_path(job) %>
+          <%= link_to "Delete", job_path(job), method: :delete %>
+        </div>
+      <div class="job_block">
+        <h3> <%= link_to job.title, job_path(job) %> </h3>
+        <%= job.company %>
+        <%= job.location %>
+        £<%= job.salary %>
+        <%= job.description %>
+      </div>
     </div>
   <% end %>
+</div>
 <% else %>
   No jobs yet
 <% end %>
@@ -17,3 +24,4 @@
 <br>
 
 <a href='/jobs/new'>Add a job</a>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
