@@ -10,11 +10,12 @@ $color_lima_approx: #73ad21;
 	border-radius: 25px;
 	border: 2px solid $color_lima_approx;
 	padding: 20px;
-	width: 200px;
-	height: 150px;
+	width: 70%;
+	height: 100px;
   margin-bottom: 10px;
 	display: flex;
-	overflow: scroll;
+	margin: 25px;
+	align-self: center;
 }
 
 .ellipsis {
@@ -31,10 +32,25 @@ $color_lima_approx: #73ad21;
 	position: relative;
 }
 
-.job_commands{
+.job_commands {
   display: none;
+}
+
+.job_specs {
+	display: flex;
+	flex-direction: row;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+	position: relative;
+	top: 1px;
+}
+
+a:active {
+	position: relative;
+	top: 2px;
 }
