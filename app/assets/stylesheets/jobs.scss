@@ -13,10 +13,12 @@ $color_lima_approx: #73ad21;
 	width: 200px;
 	height: 150px;
   margin-bottom: 10px;
+	display: flex;
+	overflow: scroll;
 }
 
 .ellipsis {
-  align-self: flex-end;
+	float: right;
 }
 
 .jobs {
