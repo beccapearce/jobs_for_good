@@ -4,6 +4,6 @@
 
 $(document).ready ->
   $('.ellipsis').click ->
-    $('.job_commands').slideToggle 'fast'
+    $('.job_commands').slideToggle 'slow'
     return
   return
