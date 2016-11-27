@@ -18,6 +18,12 @@ $color_lima_approx: #5900ff;
 	align-self: center;
 }
 
+.updating {
+	display: flex;
+	flex-direction: column;
+	float: right;
+}
+
 .ellipsis {
 	float: right;
 }
@@ -34,6 +40,7 @@ $color_lima_approx: #5900ff;
 
 .job_commands {
   display: none;
+	float: right;
 }
 
 .job_specs {

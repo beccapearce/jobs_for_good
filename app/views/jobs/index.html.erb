@@ -2,17 +2,19 @@
   <div class="jobs">
     <% @jobs.each do |job| %>
       <div id="container">
-        <div class="ellipsis">...</div>
-        <div class=job_commands>
-          <%= link_to "Edit", edit_job_path(job) %>
-          <%= link_to "Delete", job_path(job), method: :delete %>
-        </div>
       <div class="job_block">
         <h3> <%= link_to job.title, job_path(job) %> </h3>
         <div class="job_specs">
           <p> <%= job.company %> </p>
           <p> <%= job.location %> </p>
           <p> £<%= job.salary %> </p>
+        </div>
+      </div>
+      <div class="updating">
+        <div class="ellipsis">...</div>
+        <div class="job_commands">
+          <%= link_to "Edit", edit_job_path(job) %>
+          <%= link_to "Delete", job_path(job), method: :delete %>
         </div>
       </div>
     </div>
